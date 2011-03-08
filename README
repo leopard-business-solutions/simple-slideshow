@@ -7,6 +7,18 @@ This is a really basic slideshow built in jQuery (nothing fancy!)
 
 Usage
 --------
+Create a div to hold your slideshow:
+<div class="slideshow">
+</div>
+
+Add a div to hold your images:
+<div class="slideshow">
+	<div class="images">
+	</div>
+</div>
+
+Update the slideshow css with which ever selectors (classes and ID's) you choose.
+
 When the DOM has loaded call:
 	$('css-selector').slideshow(); // Yup thats it!
 	
