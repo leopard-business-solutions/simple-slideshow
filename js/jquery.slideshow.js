@@ -49,7 +49,7 @@
 					nextImage.addClass('current');
 					currentImage.removeClass('current');
 				}
-				// Call swap slides every 3 seconds
+				// Call swap slides every x seconds
 				setInterval( function() { switchSlides(); }, options.time );
 			})}
 		});
