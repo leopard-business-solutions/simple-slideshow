@@ -1,11 +1,8 @@
-.slideshow {
-  background-color: #000000;
-}
-
 .slideshow, .slide
 {
   width: 600px;
   height: 400px;
+  background-color: #000000;
 }
 
 .slideshow .images
