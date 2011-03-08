@@ -1,0 +1,33 @@
+.slideshow {
+  background-color: #000000;
+}
+
+.slideshow, .slide
+{
+  width: 600px;
+  height: 400px;
+}
+
+.slideshow .images
+{
+  display: none;
+}
+
+.slide
+{
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.currentSlide
+{
+  display: block;
+  z-index: 10;
+}
+
+.nextSlide
+{
+  display: none;
+  z-index: 20;
+}
