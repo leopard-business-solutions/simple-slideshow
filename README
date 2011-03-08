@@ -1,0 +1,16 @@
+-----------------------------------
+Simple Slideshow
+- Daniel Upton [daniel@ileopard.co]
+-----------------------------------
+
+This is a really basic slideshow built in jQuery (nothing fancy!)
+
+Usage
+--------
+When the DOM has loaded call:
+	$('css-selector').slideshow(); // Yup thats it!
+	
+Options
+--------
+Time in milliseconds: (default is 3000)
+	$('css-selector').slideshow({ time: 5000 });
