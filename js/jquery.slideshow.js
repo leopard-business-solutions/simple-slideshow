@@ -45,7 +45,7 @@
 						nextSlide.addClass('currentSlide');
 					});
 		
-					// Swap who's current the current image
+					// Swap who's the current image
 					nextImage.addClass('current');
 					currentImage.removeClass('current');
 				}
