@@ -14,7 +14,7 @@
 
 				// Get the first image and add mark it as current 
 				var firstImage = $(obj).children('.images').children(':first-child').addClass('current');
-				var firstImageUrl = escape(firstImage.attr('src'));
+				var firstImageUrl = removeSpaces(firstImage.attr('src'));
 		
 				// Add the first slide and set the first image as the slide's background
 				$(obj).append($('<div class="slide currentSlide">').css('background-image', 'url(' + firstImageUrl + ')'));
@@ -25,7 +25,7 @@
 		  			
 					// If the next child exists use it, else get the first child again
 					var nextImage = currentImage.next().length ? currentImage.next() : firstImage;
-					var nextImageUrl = escape(nextImage.attr('src'));
+					var nextImageUrl = removeSpaces(nextImage.attr('src'));
 					
 					// Get the current slide
 					var currentSlide = $(obj).children('.currentSlide');
@@ -49,6 +49,12 @@
 					nextImage.addClass('current');
 					currentImage.removeClass('current');
 				}
+        
+        function removeSpaces(str)
+        {
+          return str.replace(/ /, '%20');
+        }
+
 				// Call swap slides every x seconds
 				setInterval( function() { switchSlides(); }, options.time );
 			})}
