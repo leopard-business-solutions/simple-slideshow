@@ -14,7 +14,7 @@
 
 				// Get the first image and add mark it as current 
 				var firstImage = $(obj).children('.images').children(':first-child').addClass('current');
-				var firstImageUrl = firstImage.attr('src');
+				var firstImageUrl = escape(firstImage.attr('src'));
 		
 				// Add the first slide and set the first image as the slide's background
 				$(obj).append($('<div class="slide currentSlide">').css('background-image', 'url(' + firstImageUrl + ')'));
@@ -25,7 +25,7 @@
 		  			
 					// If the next child exists use it, else get the first child again
 					var nextImage = currentImage.next().length ? currentImage.next() : firstImage;
-					var nextImageUrl = nextImage.attr('src');
+					var nextImageUrl = escape(nextImage.attr('src'));
 					
 					// Get the current slide
 					var currentSlide = $(obj).children('.currentSlide');
